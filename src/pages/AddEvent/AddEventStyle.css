@@ -1,0 +1,14 @@
+.box {
+    margin-top: 70px;
+    width: 500px auto;
+    height: 450px auto;
+
+    background-color: cadetblue;
+    border-radius: 15px;
+}
+
+input[type="file"]
+{
+    background: transparent;
+    border: none;
+}
