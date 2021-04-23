@@ -1,25 +1,54 @@
 import React, { Component } from "react";
-import CardIcon from '../../assets/party.jpg'
+import CardIcon1 from '../../assets/bukber.jpg'
+import CardIcon2 from '../../assets/Reuni-Teman-SMK.jpg'
+import CardIcon3 from '../../assets/5e47fc8178458.jpg'
 
 class Home extends Component {
     render() {
         return(
-            <div className="card" style={{width: "18rem"}}>
-              <img src={CardIcon} className="card-img-top" alt="card"/>
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div className="container">
+            <div className="row mt-4">
+              <div className="col">
+                <div className="card" style={{width: "18rem"}}>
+                  <img src={CardIcon1} className="card-img-top" alt="card"/>
+                  <div class="card-body">
+                    <h5 class="card-title">Buka Bersama</h5>
+                    <p class="card-text">Kumpul Jam 5</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">25/04/2021</li>
+                    <li class="list-group-item">Kuningan</li>
+                  </ul>
+                </div>
               </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-                <li class="list-group-item">A third item</li>
-              </ul>
-              <div class="card-body">
-                {/* <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a> */}
+              <div className="col">
+                <div className="card" style={{width: "18rem"}}>
+                  <img src={CardIcon2} className="card-img-top" alt="card"/>
+                  <div class="card-body">
+                    <h5 class="card-title">Reuni SMK</h5>
+                    <p class="card-text">Reuni</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">10/05/2021</li>
+                    <li class="list-group-item">Kuningan</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="col">
+                <div className="card" style={{width: "18rem"}}>
+                  <img src={CardIcon3} className="card-img-top" alt="card"/>
+                  <div class="card-body">
+                    <h5 class="card-title">Traveling</h5>
+                    <p class="card-text">Traveling</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">11/05/2021</li>
+                    <li class="list-group-item">Bandung</li>
+                  </ul>
+                </div>
               </div>
             </div>
+          </div>
         )
     }
 }
